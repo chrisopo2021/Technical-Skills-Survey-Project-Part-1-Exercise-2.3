@@ -1,0 +1,265 @@
+/* Style for the body element */
+body {
+    text-align: center;
+    font-family: Oxanium, Helvetica, sans-serif;
+    background: radial-gradient(circle at 100%, #45464c, #45464c 88%, #daa520);  
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 5px double #daa520; /* Added double line border */
+}
+
+
+#navbaritem {
+    text-align: end;
+}
+
+/* Remove border from section element */
+section {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Style for h1 elements */
+h1 {
+    color: #ddb655; 
+    font-family: Orbitron, Arial, sans-serif;
+    font-size: 35px; 
+    letter-spacing: 28px; 
+    text-transform: capitalize;
+    text-shadow: #1f1f1b 1.4px 1.4px; 
+    box-sizing: border-box;
+    margin: 1px;
+}
+
+/* Style for h2 elements */
+h2 {
+    color: #ddb655; 
+    font-family: Orbitron, Arial, sans-serif;  
+    text-decoration: underline; 
+    letter-spacing: 14px; 
+    text-shadow: #1f1f1b 1.4px 1.4px; 
+    border: 2px; 
+    margin: 10px;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+
+/* Style for h3 elements */
+h3 {
+    color: #e1ddd3;
+    font-family: Orbitron, Arial, sans-serif; 
+    letter-spacing: 7px; 
+    font-weight: 800;
+    text-shadow: #daa520 0.7px 0.7px; 
+    box-sizing: border-box;
+}
+
+/* Style for h4 elements */
+h4 {
+    color: #daa520; 
+    font-family: Orbitron, Arial, sans-serif; 
+    letter-spacing: 7px; 
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+/* Style for paragraph elements */
+p {
+    color: #e1ddd3;
+    text-decoration: none;
+    font-family: Oxanium, Helvetica, sans-serif;
+    font-size: 14px; 
+    box-sizing: border-box;
+}
+
+/* Style for anchor elements */
+a {
+    color: #e1ddd3;
+    text-decoration: none;
+    font-family: Oxanium, Helvetica, sans-serif;
+    font-size: 15.4px; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 10px;
+}
+
+
+
+#profile-pic-and-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+#tableofcontents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+/* Style for ordered and unordered lists, using flexbox */
+ol, ul {
+    list-style-position: inside;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Oxanium, Helvetica, sans-serif;
+    font-size: 14px; 
+    box-sizing: border-box;
+}
+
+/* Style for list items within ordered and unordered lists */
+ol li, ul li {
+    width: 100%;
+    text-align: center;
+    color: #e1ddd3;
+    box-sizing: border-box;
+    
+}
+
+/* Change bullet color for unordered list items */
+ul li::marker {
+    color: #daa520;
+}
+
+/* Style for tables with class 'center-table' */
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+    color: #e1ddd3;
+    text-decoration: none;
+    font-family: Oxanium, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style for table header cells */
+th {
+    color: #daa520;
+    font-family: Oxanium, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Style for table data cells */
+td {
+    color: #e1ddd3;
+    font-family: Oxanium, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Style for form elements */
+form {
+    color: #e1ddd3;
+    font-family: Oxanium, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+nav a:hover {
+    color: #daa520;
+    box-sizing: border-box;
+}
+
+input, textarea, option, select {
+    outline: none;
+    background-color: #ddb655;
+}
+
+input:focus, textarea:focus {
+    background-color: #e1ddd3;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+#profile-pic {
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #daa520;
+    display: flex;
+}
+
+#myname {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact-info {
+    display: flex;
+    outline: none;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+}
+
+#email {
+    margin-bottom: -25px;
+}
+
+#phone {
+    margin-bottom: -10px;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Create a custom radio button */
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 6px;
+    padding-top: 4px;
+    cursor: pointer;
+    display: inline-block;
+    color: #e1ddd3;
+}
+
+/* Style the custom radio button */
+input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #daa520;
+    border-radius: 50%;
+    background-color: #e1ddd3;
+}
+
+/* Style the checked state */
+input[type="radio"]:checked + label:before {
+    background-color: #daa520;
+    border-color: #000000;
+}
+
+ol {
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    margin-top: -5px;
+    top: 0;
+    
+}
